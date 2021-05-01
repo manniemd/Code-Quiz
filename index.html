@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Quiz your coding skillz</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <a id="linkscore" href="scores.html" class="information"> High scores </a>
+        <h3>Timer: <span id="count"></span></h3>
+    </header>
+
+    <main class="container" id="main">
+        <div id="questionAns">
+            <div class="starquiz" id="star">
+                <h2 id="h1star">Coding Quiz Challenge </h2>
+                <p> Answer the following code-related questions. Remeber there is a time limit.<br>
+                <button id="quiz"> Start Quiz</button>
+            </div>
+            <div id="showQ">
+                <ol id="listOrd">
+                </ol>
+            </div>
+        </div>
+        <div id="infoUser">
+            <form id="form" class="formScore">
+                <h1>All Done!</h1>
+                <p>Your final score is <span id="final-score"></span></p>
+
+                <label id="initial">Enter initial:</label>
+                <input type="text" name="initial" id="initialUser" placeholder="AV" />
+                <button id="sign-up" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
