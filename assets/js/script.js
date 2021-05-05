@@ -1,5 +1,5 @@
 var highScore = 100;
-var timecountdown = 150;
+var timecountdown = 120;
 var index = 0;
 var timeInterval;
 var timeEl = document.querySelector("#count");
@@ -32,28 +32,28 @@ var buttonClearStorage = document.querySelector("#clear");
 
 
 
-//array object with question,answer and the correct answer
+//Q&A
 
 var arrayquestion = [
   {
     question: " Who created JavaScript?",
-    choices: ["Netscape", "Microsoft", "Oracle", "Sun Microsystems"],
+    choices: ["Netscape", "Tesla", "Google", "Michael Scott"],
     answer: "Netscape"
   },
   {
-    question: "Which of the following is not a reserved word in JavaScript?",
-    choices: ["default", "finally", "throw ", "undefined"],
-    answer: "undefined"
+    question: "JavaScript is a ___ -side programming language.",
+    choices: ["Client", " Server", "Both ", "None"],
+    answer: "Both"
   },
   {
-    question: " which of these statements does not belong to JavaScript:",
-    choices: ["Valuest", "String", "Keywords", "Comments"],
-    answer: "String"
+    question: " Which of the following will write the message “Hello DataFlair!” in an alert box?",
+    choices: ["alertBox(“Hello DataFlair!”);", "alert(Hello DataFlair!);", "msgAlert(“Hello DataFlair!”);", "alert(“Hello DataFlair!”);"],
+    answer: "alert(“Hello DataFlair!”);"
   },
   {
-    question: " which  statement JavaScript return a Random Integers:",
-    choices: ["Math.random()", "Math.floor()", "Math.floor()", "Math.floor(Math.random()*10)", "Math.random(Math.floor()*10)"],
-    answer: "Math.floor(Math.random()*10)"
+    question: " Which JavaScript label catches all the values, except for the ones specified?",
+    choices: ["catch", "label", "try", "default"],
+    answer: "default"
   },
   {
     question: "A JavaScript Boolean represents one or two values: ",
@@ -71,19 +71,22 @@ var arrayquestion = [
     answer: "Language dependent"
   },
   {
-    question: "JavaScript defines 5 types of primitive data types, Which of these is not one?",
-    choices: [" boolean", "number", "null", "integer"],
-    answer: "integer"
+    question: "Which are the correct “if” statements to execute certain code if “x” is equal to 2?",
+    choices: [" if(x 2)", "if(x = 2)", "if(x == 2)", "if(x != 2 )"],
+    answer: "if(x == 2)"
   },
   {
-    question: "Which of these Comparison Operators returns true for x = 5? ",
-    choices: ["x ==='5'", "x!== 5", "x!== 8", "x >= 8"],
-    answer: "x!== 8"
+    question: "What will the code return? Boolean(3 < 7) ",
+    choices: ["true", "false", "NaN", "SyntaxError"],
+    answer: "true"
   },
   {
-    question: "Select the Assignment Operators that belong to JavaScript ",
-    choices: ["+= ", "+= ", "/=", " all of the above "],
-    answer: " all of the above "
+    question: "Which is the correct JavaScript syntax to change the HTML content given below? Hello World!",
+    choices: ["document.getElementById(“test”).innerHTML = “Hello DataFlair!”; ",
+      "document.getElementsById(“test”).innerHTML = “Hello DataFlair!”; ", 
+      " document.getElementById(test).innerHTML = “Hello DataFlair!”;", 
+      " document.getElementByTagName(“p”)[0].innerHTML = “Hello DataFlair!”; "],
+    answer: " document.getElementById(“test”).innerHTML = “Hello DataFlair!”; "
   }];
 
 
